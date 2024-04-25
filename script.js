@@ -6,12 +6,12 @@
 })()
 function getMoves(){
 	return Array.from(document.querySelectorAll(".node")).map(move=>{
-                const hasPiece = move.querySelector("span");
+                const hasPiece = move.querySelector("span[data-figurine]");
                 if(hasPiece){
-                        return hasPiece.getAttribute("data-figurine") + move.innerText
+                        return (hasPiece.getAttribute("data-figurine") + move.innerText).replaceAll(/\s+/g, "")
                 }
-                return move.innerText
-        });  
+                return move.innerText.replaceAll(/\s+/g, "")
+        });
 }
 
 function initBlindfold(){
