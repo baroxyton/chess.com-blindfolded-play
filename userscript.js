@@ -6,7 +6,7 @@
 // @author       https;//github.com/baroxyton/chess.com-blindfolded-play
 // @match        https://*.chess.com/game/*
 // @match        https://*.chess.com/play/online/*
-// @match        https://*.chess.com/play/online
+// @match        https://*.chess.com/play/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=chess.com
 // @grant        none
 // ==/UserScript==
